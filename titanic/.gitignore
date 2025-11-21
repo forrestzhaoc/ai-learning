@@ -24,8 +24,8 @@ Thumbs.db
 
 # Project specific
 models/*.joblib
-data/*.csv
-data/*.zip
+# data/*.csv  # Allow data files to be committed
+# data/*.zip  # Allow data files to be committed
 submissions/*.csv
 
 # Logs
