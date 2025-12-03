@@ -7,6 +7,8 @@ It handles feature engineering, model training, cross-validation, and submission
 
 - `requirements.txt` – Python dependencies.
 - `src/train.py` – CLI entry point that trains and evaluates the model, then writes a Kaggle-ready submission.
+- `src/train_simple.py` – Simplified training script with basic feature engineering.
+- `src/eda.py` – Exploratory Data Analysis script for correlation analysis.
 - `data/` – Expected location for `train.csv` and `test.csv` downloaded from Kaggle (create manually).
 - `models/` – Trained model artifacts (created automatically).
 - `submissions/` – Generated submission CSVs (created automatically).
@@ -42,6 +44,30 @@ Key flags:
 - `--cv-folds` &mdash; Stratified K-folds used both for reporting accuracy and within the stacking meta-learner.
 
 The script prints cross-validation accuracy, fits on the full training set, saves the estimator, and writes a submission file.
+
+## Exploratory Data Analysis (EDA)
+
+Run correlation analysis to understand feature relationships:
+
+```bash
+# Basic analysis
+python src/eda.py
+
+# Generate report file
+python src/eda.py --output correlation_report.txt
+
+# Generate visualizations (requires matplotlib and seaborn)
+python src/eda.py --visualize
+
+# Customize analysis
+python src/eda.py --top-n 20 --threshold 0.6 --output report.txt
+```
+
+The EDA script provides:
+- **Feature-target correlations**: Identifies which features are most correlated with survival
+- **Feature-feature correlations**: Detects multicollinearity issues
+- **Categorical analysis**: Analyzes survival rates by category
+- **Visualizations**: Heatmaps, bar charts, and scatter plots (with `--visualize`)
 
 ## Notes
 
