@@ -1,1 +1,7 @@
 data/
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+env/
