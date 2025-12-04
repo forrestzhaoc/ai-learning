@@ -1,8 +1,11 @@
 # 向量数据库
 # chromadb>=0.4.0  # 可选：使用 ChromaDB
 # pymilvus>=2.3.0  # 可选：使用 Milvus
-qdrant-client>=1.7.0  # Qdrant Python 客户端（默认）
+# qdrant-client>=1.7.0  # 可选：使用 Qdrant
 # weaviate-client>=3.25.0  # 可选：使用 Weaviate
+
+# 图数据库
+pyorient>=1.6.9  # OrientDB Python 客户端（默认）
 
 # 向量嵌入生成
 sentence-transformers>=2.2.0
