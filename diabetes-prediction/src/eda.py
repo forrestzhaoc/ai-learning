@@ -10,7 +10,7 @@ import seaborn as sns
 import os
 
 
-def load_data(data_path='../data/train.csv'):
+def load_data(data_path='data/train.csv'):
     """加载训练数据"""
     return pd.read_csv(data_path)
 
@@ -51,7 +51,7 @@ def check_zero_values(df):
             print(f"{column}: {zero_count} 个零值 ({zero_percentage:.2f}%)")
 
 
-def plot_distributions(df, save_path='../predictions'):
+def plot_distributions(df, save_path='predictions'):
     """绘制特征分布图"""
     print("\n" + "=" * 60)
     print("生成分布图...")
@@ -83,7 +83,7 @@ def plot_distributions(df, save_path='../predictions'):
     plt.close()
 
 
-def plot_correlation_matrix(df, save_path='../predictions'):
+def plot_correlation_matrix(df, save_path='predictions'):
     """绘制相关性矩阵"""
     print("\n生成相关性矩阵...")
     
@@ -112,7 +112,7 @@ def plot_correlation_matrix(df, save_path='../predictions'):
             print(f"{feature}: {correlation_matrix['Outcome'][feature]:.4f}")
 
 
-def plot_box_plots(df, save_path='../predictions'):
+def plot_box_plots(df, save_path='predictions'):
     """绘制箱线图检测异常值"""
     print("\n生成箱线图...")
     
