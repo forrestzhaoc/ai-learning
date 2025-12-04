@@ -8,6 +8,7 @@ It handles feature engineering, model training, cross-validation, and submission
 - `requirements.txt` – Python dependencies.
 - `src/train.py` – CLI entry point that trains and evaluates the model, then writes a Kaggle-ready submission.
 - `src/train_simple.py` – Simplified training script with basic feature engineering.
+- `src/train_transformer.py` – Transformer-based model (TabTransformer architecture).
 - `src/eda.py` – Exploratory Data Analysis script for correlation analysis.
 - `data/` – Expected location for `train.csv` and `test.csv` downloaded from Kaggle (create manually).
 - `models/` – Trained model artifacts (created automatically).
@@ -68,6 +69,38 @@ The EDA script provides:
 - **Feature-feature correlations**: Detects multicollinearity issues
 - **Categorical analysis**: Analyzes survival rates by category
 - **Visualizations**: Heatmaps, bar charts, and scatter plots (with `--visualize`)
+
+## Transformer Model
+
+Use a Transformer-based model (TabTransformer) for tabular data:
+
+```bash
+# Basic usage
+python src/train_transformer.py
+
+# Customize training
+python src/train_transformer.py --epochs 50 --batch-size 32 --lr 0.001
+
+# With cross-validation
+python src/train_transformer.py --cv-folds 5 --epochs 30
+```
+
+**Key Features:**
+- **TabTransformer Architecture**: Uses Transformer encoder to learn feature interactions
+- **Categorical Embeddings**: Categorical features are embedded before Transformer processing
+- **Numeric Projection**: Numeric features are projected to embedding space
+- **Self-Attention**: Learns complex feature interactions automatically
+- **Cross-Validation**: Built-in stratified K-fold cross-validation
+
+**Architecture:**
+1. Categorical features → Embedding layers → Transformer Encoder
+2. Numeric features → Linear projection → Transformer Encoder
+3. All features concatenated → MLP classifier → Binary output
+
+**Note**: Requires PyTorch (`torch>=2.0`). Install with:
+```bash
+pip install torch
+```
 
 ## Notes
 

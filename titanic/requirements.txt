@@ -5,6 +5,7 @@ joblib>=1.4
 xgboost>=2.1
 matplotlib>=3.7
 seaborn>=0.12
+torch>=2.0
 
 
 
