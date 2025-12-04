@@ -31,10 +31,21 @@ pip install -r requirements.txt
 
 ### 2. 准备数据
 
-将从Kaggle下载的数据文件放到 `data/` 目录:
-- train.csv
-- test.csv
-- sample_submission.csv
+**选项A：从Kaggle下载真实数据（推荐）**
+
+```bash
+# 首先配置Kaggle API（详见KAGGLE_SETUP.md）
+# 然后运行下载脚本
+python3 download_data.py
+```
+
+**选项B：使用示例数据测试**
+
+```bash
+python3 create_sample_data.py
+```
+
+详细的Kaggle API配置说明请查看 `KAGGLE_SETUP.md`
 
 ### 3. 训练模型
 

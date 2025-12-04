@@ -1,6 +1,10 @@
 """
 快速开始脚本
 一键运行完整的训练和提交流程
+
+使用方法：
+    source venv/bin/activate
+    python3 quick_start.py
 """
 
 import os
