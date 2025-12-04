@@ -9,7 +9,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # # from implementations.chroma_impl import ChromaGraphDB  # 可选：使用 ChromaDB
 # from implementations.milvus_impl import MilvusGraphDB  # 可选：使用 Milvus
-from implementations.qdrant_impl import QdrantGraphDB  # 使用 Qdrant  # 可选：使用 ChromaDB
+from implementations.qdrant_impl import QdrantGraphDB  # 使用 Qdrant
+# from implementations.orientdb_impl import OrientDBGraphDB  # 可选：使用 OrientDB  # 可选：使用 ChromaDB
 from implementations.milvus_impl import MilvusGraphDB
 from models.graph_models import Node, Relationship, GraphData
 from demo import create_sample_data

@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 # from implementations.chroma_impl import ChromaGraphDB  # 可选：使用 ChromaDB
 # from implementations.milvus_impl import MilvusGraphDB  # 可选：使用 Milvus
 from implementations.qdrant_impl import QdrantGraphDB  # 使用 Qdrant
+# from implementations.orientdb_impl import OrientDBGraphDB  # 可选：使用 OrientDB
 from models.graph_models import Node, Relationship, GraphData
 import json
 
@@ -117,8 +118,6 @@ def main():
     print("\n正在初始化 Qdrant...")
     # 使用 Qdrant 本地内存模式（无需启动服务）
     db = QdrantGraphDB(use_local=True)
-    # 或使用 Qdrant 服务模式：
-    # db = QdrantGraphDB(host="localhost", port=6333, use_local=False)
     
     # 清空现有数据（可选）
     # db.clear()

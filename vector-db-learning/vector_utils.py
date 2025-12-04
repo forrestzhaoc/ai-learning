@@ -166,3 +166,4 @@ def batch_create_embeddings(
     return embeddings
 
 
+

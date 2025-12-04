@@ -194,6 +194,196 @@ def create_rich_data():
             "awards": "Oscar Nominee",
             "bio": "Prolific actor with over 100 film credits"
         }),
+        
+        # 中国演员和导演
+        Node("p21", "Person", {
+            "name": "Zhang Yimou",
+            "born": 1951,
+            "nationality": "Chinese",
+            "profession": "Director",
+            "genre": "Drama, Action, Historical",
+            "awards": "Golden Bear, Golden Lion",
+            "bio": "Acclaimed Chinese filmmaker known for visually stunning films"
+        }),
+        Node("p22", "Person", {
+            "name": "Ang Lee",
+            "born": 1954,
+            "nationality": "Taiwanese",
+            "profession": "Director",
+            "genre": "Drama, Romance, Action",
+            "awards": "Oscar Winner (2 times)",
+            "bio": "Academy Award-winning director known for diverse filmography"
+        }),
+        Node("p23", "Person", {
+            "name": "Jet Li",
+            "born": 1963,
+            "nationality": "Chinese",
+            "profession": "Actor",
+            "genre": "Action, Martial Arts",
+            "bio": "Martial arts actor and former wushu champion"
+        }),
+        Node("p24", "Person", {
+            "name": "Zhang Ziyi",
+            "born": 1979,
+            "nationality": "Chinese",
+            "profession": "Actress",
+            "genre": "Action, Drama",
+            "bio": "Acclaimed Chinese actress known for martial arts films"
+        }),
+        Node("p25", "Person", {
+            "name": "Donnie Yen",
+            "born": 1963,
+            "nationality": "Chinese",
+            "profession": "Actor",
+            "genre": "Action, Martial Arts",
+            "bio": "Martial arts actor and action choreographer"
+        }),
+        Node("p26", "Person", {
+            "name": "Wu Jing",
+            "born": 1974,
+            "nationality": "Chinese",
+            "profession": "Actor, Director",
+            "genre": "Action, Military",
+            "bio": "Chinese action star and director"
+        }),
+        Node("p27", "Person", {
+            "name": "Frant Gwo",
+            "born": 1980,
+            "nationality": "Chinese",
+            "profession": "Director, Writer",
+            "genre": "Sci-Fi, Action",
+            "bio": "Chinese filmmaker known for sci-fi blockbusters"
+        }),
+        
+        # 更多中国演员和导演
+        Node("p28", "Person", {
+            "name": "Gong Li",
+            "born": 1965,
+            "nationality": "Chinese",
+            "profession": "Actress",
+            "genre": "Drama",
+            "awards": "Golden Rooster Award",
+            "bio": "Acclaimed Chinese actress, frequent collaborator with Zhang Yimou"
+        }),
+        Node("p29", "Person", {
+            "name": "Tony Leung",
+            "born": 1962,
+            "nationality": "Hong Kong",
+            "profession": "Actor",
+            "genre": "Drama, Action",
+            "awards": "Cannes Best Actor",
+            "bio": "Acclaimed Hong Kong actor"
+        }),
+        Node("p30", "Person", {
+            "name": "Maggie Cheung",
+            "born": 1964,
+            "nationality": "Hong Kong",
+            "profession": "Actress",
+            "genre": "Drama, Action",
+            "awards": "Cannes Best Actress",
+            "bio": "Acclaimed Hong Kong actress"
+        }),
+        Node("p31", "Person", {
+            "name": "Chow Yun-fat",
+            "born": 1955,
+            "nationality": "Hong Kong",
+            "profession": "Actor",
+            "genre": "Action, Drama",
+            "bio": "Legendary Hong Kong actor"
+        }),
+        Node("p32", "Person", {
+            "name": "Jackie Chan",
+            "born": 1954,
+            "nationality": "Hong Kong",
+            "profession": "Actor, Director, Stunt Performer",
+            "genre": "Action, Comedy",
+            "awards": "Oscar Honorary Award",
+            "bio": "International action star and martial artist"
+        }),
+        Node("p33", "Person", {
+            "name": "Stephen Chow",
+            "born": 1962,
+            "nationality": "Hong Kong",
+            "profession": "Actor, Director, Writer",
+            "genre": "Comedy, Action",
+            "bio": "Comedy filmmaker and actor"
+        }),
+        Node("p34", "Person", {
+            "name": "Wong Kar-wai",
+            "born": 1958,
+            "nationality": "Hong Kong",
+            "profession": "Director, Writer",
+            "genre": "Drama, Romance",
+            "awards": "Cannes Best Director",
+            "bio": "Acclaimed Hong Kong filmmaker"
+        }),
+        Node("p35", "Person", {
+            "name": "Chen Kaige",
+            "born": 1952,
+            "nationality": "Chinese",
+            "profession": "Director",
+            "genre": "Drama, Historical",
+            "awards": "Palme d'Or",
+            "bio": "Fifth Generation Chinese filmmaker"
+        }),
+        Node("p36", "Person", {
+            "name": "Jia Zhangke",
+            "born": 1970,
+            "nationality": "Chinese",
+            "profession": "Director, Writer",
+            "genre": "Drama, Documentary",
+            "awards": "Golden Lion",
+            "bio": "Sixth Generation Chinese filmmaker"
+        }),
+        Node("p37", "Person", {
+            "name": "Wang Baoqiang",
+            "born": 1984,
+            "nationality": "Chinese",
+            "profession": "Actor, Director",
+            "genre": "Comedy, Drama",
+            "bio": "Chinese actor and director"
+        }),
+        Node("p38", "Person", {
+            "name": "Huang Bo",
+            "born": 1974,
+            "nationality": "Chinese",
+            "profession": "Actor, Director",
+            "genre": "Comedy, Drama",
+            "bio": "Chinese actor and filmmaker"
+        }),
+        Node("p39", "Person", {
+            "name": "Shen Teng",
+            "born": 1979,
+            "nationality": "Chinese",
+            "profession": "Actor, Comedian",
+            "genre": "Comedy",
+            "bio": "Chinese comedian and actor"
+        }),
+        Node("p40", "Person", {
+            "name": "Zhou Dongyu",
+            "born": 1992,
+            "nationality": "Chinese",
+            "profession": "Actress",
+            "genre": "Drama",
+            "awards": "Golden Horse Award",
+            "bio": "Chinese actress"
+        }),
+        Node("p41", "Person", {
+            "name": "Yi Yangqianxi",
+            "born": 2000,
+            "nationality": "Chinese",
+            "profession": "Actor, Singer",
+            "genre": "Drama, Action",
+            "bio": "Chinese actor and pop star"
+        }),
+        Node("p42", "Person", {
+            "name": "Deng Chao",
+            "born": 1979,
+            "nationality": "Chinese",
+            "profession": "Actor, Director",
+            "genre": "Comedy, Drama",
+            "bio": "Chinese actor and director"
+        }),
     ]
     
     all_people = action_actors + more_actors
@@ -385,6 +575,286 @@ def create_rich_data():
             "runtime": 169,
             "plot": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines"
         }),
+        
+        # 中国电影
+        Node("m16", "Movie", {
+            "title": "Crouching Tiger, Hidden Dragon",
+            "released": 2000,
+            "genre": "Action, Drama, Romance",
+            "tagline": "A timeless story of strength, secrets and two warriors who would never surrender",
+            "rating": 7.9,
+            "box_office": 213000000,
+            "language": "Mandarin, English",
+            "country": "China, Taiwan, USA, Hong Kong",
+            "runtime": 120,
+            "plot": "A young Chinese warrior steals a sword from a famed swordsman and then escapes into a world of romantic adventure"
+        }),
+        Node("m17", "Movie", {
+            "title": "Hero",
+            "released": 2002,
+            "genre": "Action, Drama, History",
+            "tagline": "Before China was one, it was seven warring kingdoms",
+            "rating": 7.9,
+            "box_office": 177000000,
+            "language": "Mandarin",
+            "country": "China, Hong Kong",
+            "runtime": 99,
+            "plot": "A defense officer, Nameless, was summoned by the King of Qin regarding his success of terminating three warriors"
+        }),
+        Node("m18", "Movie", {
+            "title": "House of Flying Daggers",
+            "released": 2004,
+            "genre": "Action, Drama, Romance",
+            "tagline": "Love is a lie, only death is real",
+            "rating": 7.5,
+            "box_office": 93000000,
+            "language": "Mandarin",
+            "country": "China, Hong Kong",
+            "runtime": 119,
+            "plot": "A romantic police captain breaks a beautiful member of a revolutionary group out of prison to help her rejoin her fellows"
+        }),
+        Node("m19", "Movie", {
+            "title": "The Wandering Earth",
+            "released": 2019,
+            "genre": "Sci-Fi, Action, Drama",
+            "tagline": "For the survival of humanity",
+            "rating": 6.4,
+            "box_office": 700000000,
+            "language": "Mandarin, English",
+            "country": "China",
+            "runtime": 125,
+            "plot": "As the sun is dying out, people all around the world build giant planet thrusters to move Earth out of its orbit"
+        }),
+        Node("m20", "Movie", {
+            "title": "Wolf Warrior 2",
+            "released": 2017,
+            "genre": "Action, Thriller",
+            "tagline": "Whoever offends China will be hunted down no matter how far the target is",
+            "rating": 6.0,
+            "box_office": 870000000,
+            "language": "Mandarin, English",
+            "country": "China",
+            "runtime": 126,
+            "plot": "A Chinese special forces soldier fights against mercenaries in Africa"
+        }),
+        Node("m21", "Movie", {
+            "title": "Ne Zha",
+            "released": 2019,
+            "genre": "Animation, Action, Adventure",
+            "tagline": "I am the master of my own fate",
+            "rating": 7.5,
+            "box_office": 720000000,
+            "language": "Mandarin",
+            "country": "China",
+            "runtime": 110,
+            "plot": "A boy born with unique powers tries to find a place in the world"
+        }),
+        
+        # 更多中国电影
+        Node("m22", "Movie", {
+            "title": "Farewell My Concubine",
+            "released": 1993,
+            "genre": "Drama, Music, Romance",
+            "tagline": "Two men, one woman, and half a century of Chinese history",
+            "rating": 8.1,
+            "box_office": 5200000,
+            "language": "Mandarin",
+            "country": "China, Hong Kong",
+            "runtime": 171,
+            "plot": "Two boys meet at an opera training school in Peking in 1924"
+        }),
+        Node("m23", "Movie", {
+            "title": "Raise the Red Lantern",
+            "released": 1991,
+            "genre": "Drama",
+            "tagline": "Tradition is a trap",
+            "rating": 8.1,
+            "box_office": 2600000,
+            "language": "Mandarin",
+            "country": "China, Hong Kong, Taiwan",
+            "runtime": 125,
+            "plot": "A young woman becomes the fourth wife of a wealthy man"
+        }),
+        Node("m24", "Movie", {
+            "title": "To Live",
+            "released": 1994,
+            "genre": "Drama, History",
+            "tagline": "A family's journey through China's turbulent history",
+            "rating": 8.3,
+            "box_office": 2300000,
+            "language": "Mandarin",
+            "country": "China, Hong Kong",
+            "runtime": 132,
+            "plot": "A family struggles to survive through China's political upheavals"
+        }),
+        Node("m25", "Movie", {
+            "title": "Red Sorghum",
+            "released": 1987,
+            "genre": "Drama, War",
+            "tagline": "A story of love and resistance",
+            "rating": 7.7,
+            "box_office": 0,
+            "language": "Mandarin",
+            "country": "China",
+            "runtime": 91,
+            "plot": "A young woman is forced to marry an old winery owner"
+        }),
+        Node("m26", "Movie", {
+            "title": "The Grandmaster",
+            "released": 2013,
+            "genre": "Action, Biography, Drama",
+            "tagline": "The legend of Ip Man",
+            "rating": 6.5,
+            "box_office": 64000000,
+            "language": "Mandarin, Cantonese",
+            "country": "China, Hong Kong",
+            "runtime": 108,
+            "plot": "The story of martial-arts master Ip Man, the man who trained Bruce Lee"
+        }),
+        Node("m27", "Movie", {
+            "title": "Ip Man",
+            "released": 2008,
+            "genre": "Action, Biography, Drama",
+            "tagline": "The legend begins",
+            "rating": 8.0,
+            "box_office": 22000000,
+            "language": "Cantonese, Mandarin",
+            "country": "China, Hong Kong",
+            "runtime": 106,
+            "plot": "During the Japanese invasion of 1937, a wealthy martial artist is forced to leave his home"
+        }),
+        Node("m28", "Movie", {
+            "title": "Ip Man 2",
+            "released": 2010,
+            "genre": "Action, Biography, Drama",
+            "tagline": "The legend is born",
+            "rating": 7.5,
+            "box_office": 19000000,
+            "language": "Cantonese, Mandarin",
+            "country": "China, Hong Kong",
+            "runtime": 108,
+            "plot": "Ip Man moves to Hong Kong after the war to start a new life"
+        }),
+        Node("m29", "Movie", {
+            "title": "Detective Chinatown",
+            "released": 2015,
+            "genre": "Action, Comedy, Mystery",
+            "tagline": "A hilarious detective adventure",
+            "rating": 6.5,
+            "box_office": 125000000,
+            "language": "Mandarin",
+            "country": "China",
+            "runtime": 135,
+            "plot": "A detective and his nephew travel to Bangkok to solve a murder case"
+        }),
+        Node("m30", "Movie", {
+            "title": "Detective Chinatown 2",
+            "released": 2018,
+            "genre": "Action, Comedy, Mystery",
+            "tagline": "The adventure continues in New York",
+            "rating": 6.1,
+            "box_office": 544000000,
+            "language": "Mandarin, English",
+            "country": "China",
+            "runtime": 121,
+            "plot": "The detective duo travels to New York to solve a new case"
+        }),
+        Node("m31", "Movie", {
+            "title": "Monster Hunt",
+            "released": 2015,
+            "genre": "Action, Adventure, Comedy",
+            "tagline": "A fantasy adventure",
+            "rating": 5.8,
+            "box_office": 385000000,
+            "language": "Mandarin",
+            "country": "China",
+            "runtime": 118,
+            "plot": "A young man discovers he is pregnant with a monster prince"
+        }),
+        Node("m32", "Movie", {
+            "title": "The Mermaid",
+            "released": 2016,
+            "genre": "Comedy, Fantasy, Romance",
+            "tagline": "A love story between a mermaid and a businessman",
+            "rating": 6.2,
+            "box_office": 553000000,
+            "language": "Mandarin, Cantonese",
+            "country": "China",
+            "runtime": 94,
+            "plot": "A mermaid is sent to assassinate a businessman but falls in love"
+        }),
+        Node("m33", "Movie", {
+            "title": "Operation Red Sea",
+            "released": 2018,
+            "genre": "Action, Drama, Thriller",
+            "tagline": "A Chinese naval special forces operation",
+            "rating": 6.7,
+            "box_office": 579000000,
+            "language": "Mandarin, Arabic, English",
+            "country": "China",
+            "runtime": 142,
+            "plot": "Chinese naval special forces rescue Chinese citizens from a war-torn country"
+        }),
+        Node("m34", "Movie", {
+            "title": "Dying to Survive",
+            "released": 2018,
+            "genre": "Comedy, Drama",
+            "tagline": "A story of hope and survival",
+            "rating": 9.0,
+            "box_office": 470000000,
+            "language": "Mandarin",
+            "country": "China",
+            "runtime": 117,
+            "plot": "A shopkeeper becomes an illegal drug dealer to help leukemia patients"
+        }),
+        Node("m35", "Movie", {
+            "title": "Better Days",
+            "released": 2019,
+            "genre": "Crime, Drama, Romance",
+            "tagline": "A story of youth and bullying",
+            "rating": 7.4,
+            "box_office": 230000000,
+            "language": "Mandarin",
+            "country": "China, Hong Kong",
+            "runtime": 135,
+            "plot": "A bullied high school student forms an unlikely friendship with a small-time criminal"
+        }),
+        Node("m36", "Movie", {
+            "title": "The Eight Hundred",
+            "released": 2020,
+            "genre": "Action, Drama, History",
+            "tagline": "A heroic last stand",
+            "rating": 7.5,
+            "box_office": 461000000,
+            "language": "Mandarin",
+            "country": "China",
+            "runtime": 149,
+            "plot": "In 1937, Chinese soldiers defend a warehouse during the Battle of Shanghai"
+        }),
+        Node("m37", "Movie", {
+            "title": "Hi, Mom",
+            "released": 2021,
+            "genre": "Comedy, Drama, Fantasy",
+            "tagline": "A time-traveling comedy",
+            "rating": 7.8,
+            "box_office": 822000000,
+            "language": "Mandarin",
+            "country": "China",
+            "runtime": 128,
+            "plot": "A woman travels back in time to meet her late mother"
+        }),
+        Node("m38", "Movie", {
+            "title": "Full River Red",
+            "released": 2023,
+            "genre": "Comedy, Drama, History",
+            "tagline": "A historical mystery",
+            "rating": 7.2,
+            "box_office": 673000000,
+            "language": "Mandarin",
+            "country": "China",
+            "runtime": 159,
+            "plot": "A comedy mystery set during the Song Dynasty"
+        }),
     ]
     
     # 添加所有节点
@@ -478,6 +948,70 @@ def create_rich_data():
         Relationship("r51", "p1", "m7", "REVIEWED", {"rating": 9, "comment": "Mind-bending masterpiece"}),
         Relationship("r52", "p2", "m8", "REVIEWED", {"rating": 10, "comment": "Best superhero movie ever"}),
         Relationship("r53", "p11", "m1", "REVIEWED", {"rating": 8, "comment": "Revolutionary sci-fi"}),
+        
+        # 中国电影关系
+        Relationship("r54", "p22", "m16", "DIRECTED", {}),
+        Relationship("r55", "p24", "m16", "ACTED_IN", {"roles": ["Jen Yu"], "billing": 1}),
+        Relationship("r56", "p23", "m16", "ACTED_IN", {"roles": ["Li Mu Bai"], "billing": 2}),
+        
+        Relationship("r57", "p21", "m17", "DIRECTED", {}),
+        Relationship("r58", "p23", "m17", "ACTED_IN", {"roles": ["Nameless"], "billing": 1}),
+        
+        Relationship("r59", "p21", "m18", "DIRECTED", {}),
+        Relationship("r60", "p24", "m18", "ACTED_IN", {"roles": ["Mei"], "billing": 1}),
+        
+        Relationship("r61", "p27", "m19", "DIRECTED", {}),
+        Relationship("r62", "p27", "m19", "WROTE", {}),
+        
+        Relationship("r63", "p26", "m20", "DIRECTED", {}),
+        Relationship("r64", "p26", "m20", "ACTED_IN", {"roles": ["Leng Feng"], "billing": 1}),
+        Relationship("r65", "p25", "m20", "ACTED_IN", {"roles": ["Big Daddy"], "billing": 2}),
+        
+        # 更多中国电影关系
+        Relationship("r66", "p35", "m22", "DIRECTED", {}),
+        Relationship("r67", "p28", "m22", "ACTED_IN", {"roles": ["Juxian"], "billing": 1}),
+        Relationship("r68", "p29", "m22", "ACTED_IN", {"roles": ["Cheng Dieyi"], "billing": 2}),
+        
+        Relationship("r69", "p21", "m23", "DIRECTED", {}),
+        Relationship("r70", "p28", "m23", "ACTED_IN", {"roles": ["Songlian"], "billing": 1}),
+        
+        Relationship("r71", "p21", "m24", "DIRECTED", {}),
+        Relationship("r72", "p28", "m24", "ACTED_IN", {"roles": ["Jiazhen"], "billing": 1}),
+        
+        Relationship("r73", "p21", "m25", "DIRECTED", {}),
+        Relationship("r74", "p28", "m25", "ACTED_IN", {"roles": ["Jiu'er"], "billing": 1}),
+        
+        Relationship("r75", "p22", "m26", "DIRECTED", {}),
+        Relationship("r76", "p25", "m26", "ACTED_IN", {"roles": ["Ip Man"], "billing": 1}),
+        Relationship("r77", "p30", "m26", "ACTED_IN", {"roles": ["Gong Er"], "billing": 2}),
+        
+        Relationship("r78", "p25", "m27", "ACTED_IN", {"roles": ["Ip Man"], "billing": 1}),
+        
+        Relationship("r79", "p25", "m28", "ACTED_IN", {"roles": ["Ip Man"], "billing": 1}),
+        
+        Relationship("r80", "p37", "m29", "ACTED_IN", {"roles": ["Qin Feng"], "billing": 1}),
+        Relationship("r81", "p38", "m29", "ACTED_IN", {"roles": ["Tang Ren"], "billing": 2}),
+        
+        Relationship("r82", "p37", "m30", "ACTED_IN", {"roles": ["Qin Feng"], "billing": 1}),
+        Relationship("r83", "p38", "m30", "ACTED_IN", {"roles": ["Tang Ren"], "billing": 2}),
+        
+        Relationship("r84", "p33", "m32", "DIRECTED", {}),
+        Relationship("r85", "p33", "m32", "ACTED_IN", {"roles": ["Liu Xuan"], "billing": 1}),
+        
+        Relationship("r86", "p26", "m33", "ACTED_IN", {"roles": ["Yang Rui"], "billing": 1}),
+        
+        Relationship("r87", "p38", "m34", "ACTED_IN", {"roles": ["Cheng Yong"], "billing": 1}),
+        
+        Relationship("r88", "p40", "m35", "ACTED_IN", {"roles": ["Chen Nian"], "billing": 1}),
+        Relationship("r89", "p41", "m35", "ACTED_IN", {"roles": ["Xiao Bei"], "billing": 2}),
+        
+        Relationship("r90", "p42", "m36", "ACTED_IN", {"roles": ["Xie Jinyuan"], "billing": 1}),
+        
+        Relationship("r91", "p39", "m37", "ACTED_IN", {"roles": ["Jia Xiaoling"], "billing": 1}),
+        Relationship("r92", "p38", "m37", "ACTED_IN", {"roles": ["Shen Guanglin"], "billing": 2}),
+        
+        Relationship("r93", "p42", "m38", "DIRECTED", {}),
+        Relationship("r94", "p42", "m38", "ACTED_IN", {"roles": ["Zhang Da"], "billing": 1}),
     ]
     
     # 添加所有关系

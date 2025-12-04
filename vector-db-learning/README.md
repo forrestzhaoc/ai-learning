@@ -10,10 +10,11 @@
 - 路径查找和推荐系统
 - 社区发现和影响力分析
 
-## 支持的向量数据库
+## 支持的数据库
 
-- **Qdrant** - 高性能，支持复杂查询（默认，支持本地内存模式）
-- **ChromaDB** - 轻量级，易于使用
+- **OrientDB** - 多模型图数据库（默认，原生图数据库支持）
+- **Qdrant** - 高性能向量数据库，支持复杂查询
+- **ChromaDB** - 轻量级向量数据库，易于使用
 - **Milvus** - 大规模向量数据库
 - **Weaviate** - 功能丰富，支持图查询
 
@@ -30,11 +31,31 @@
 
 ## 快速开始
 
-### 使用 Qdrant（推荐）
+### 使用 OrientDB（推荐）
 
-Qdrant 支持两种模式：
+OrientDB 是原生图数据库，提供强大的图查询能力。
 
-#### 方式一：本地内存模式（无需启动服务，推荐）
+#### 步骤1: 安装和启动 OrientDB
+
+**方式一：使用 Docker（推荐）**
+```bash
+docker run -d \
+  --name orientdb \
+  -p 2424:2424 \
+  -p 2480:2480 \
+  -e ORIENTDB_ROOT_PASSWORD=root \
+  orientdb:latest
+```
+
+**方式二：本地安装**
+1. 从 [OrientDB 官网](https://orientdb.com/download/) 下载
+2. 解压并启动：
+   ```bash
+   cd orientdb-*/bin
+   ./server.sh
+   ```
+
+#### 步骤2: 运行代码
 
 ```bash
 # 激活虚拟环境
@@ -50,22 +71,21 @@ python3 demo.py
 python3 mining_queries.py
 ```
 
-#### 方式二：Qdrant 服务模式
+### 使用其他数据库
 
-1. **启动 Qdrant 服务**（使用 Docker）：
-   ```bash
-   docker run -d \
-     --name qdrant \
-     -p 6333:6333 \
-     -p 6334:6334 \
-     qdrant/qdrant
-   ```
+#### 使用 Qdrant
 
-2. **运行代码**：
-   ```python
-   # 修改 demo.py 中的初始化代码
-   db = QdrantGraphDB(host="localhost", port=6333, use_local=False)
-   ```
+```python
+from implementations.qdrant_impl import QdrantGraphDB
+db = QdrantGraphDB(use_local=True)  # 本地内存模式
+```
+
+#### 使用 ChromaDB
+
+```python
+from implementations.chroma_impl import ChromaGraphDB
+db = ChromaGraphDB(persist_directory="./chroma_db")
+```
 
 ### 使用其他向量数据库
 
