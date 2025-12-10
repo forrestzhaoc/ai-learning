@@ -5,3 +5,14 @@ venv/
 .venv/
 ENV/
 env/
+
+# Model files
+*.joblib
+*.pth
+*.pkl
+*.h5
+*.ckpt
+
+# Submission files
+submissions/*.csv
+predictions/*.csv
