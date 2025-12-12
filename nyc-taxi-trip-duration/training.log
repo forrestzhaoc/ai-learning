@@ -1,0 +1,82 @@
+加载训练数据: data/train.csv
+✓ 训练数据: 100000 行 × 11 列
+加载测试数据: data/test.csv
+✓ 测试数据: 100000 行 × 9 列
+
+数据清洗...
+移除了 76 条无效坐标记录 (0.08%)
+移除了 398 条零距离行程记录
+
+移除异常值...
+移除了 1976 个异常值 (1.99%)
+范围: [92.00, 3380.00] 秒
+移除了 69 条无效坐标记录 (0.07%)
+移除了 405 条零距离行程记录
+
+特征工程...
+✓ 特征工程完成，特征数量: 25
+特征列表: ['id', 'vendor_id', 'dropoff_datetime', 'passenger_count', 'pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude', 'store_and_fwd_flag', 'hour']...
+
+训练 XGB 模型...
+构建预处理管道...
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/ai-learning/nyc-taxi-trip-duration/src/train.py", line 442, in <module>
+    main()
+  File "/home/ubuntu/projects/ai-learning/nyc-taxi-trip-duration/src/train.py", line 386, in main
+    model, preprocessor = train_model(
+                          ^^^^^^^^^^^^
+  File "/home/ubuntu/projects/ai-learning/nyc-taxi-trip-duration/src/train.py", line 271, in train_model
+    X_train_processed = preprocessor.fit_transform(X_train)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/base.py", line 1365, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/compose/_column_transformer.py", line 996, in fit_transform
+    result = self._call_func_on_transformers(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/compose/_column_transformer.py", line 897, in _call_func_on_transformers
+    return Parallel(n_jobs=self.n_jobs)(jobs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/joblib/parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/joblib/parallel.py", line 1914, in _get_sequential_output
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 147, in __call__
+    return self.function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/pipeline.py", line 1540, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/base.py", line 1365, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/pipeline.py", line 731, in fit_transform
+    return last_step.fit_transform(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/base.py", line 894, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py", line 1083, in transform
+    return out.toarray()
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 996, in toarray
+    out = self._process_toarray_args(order, out)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/scipy/sparse/_base.py", line 1530, in _process_toarray_args
+    return np.zeros(self.shape, dtype=self.dtype, order=order)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 142. GiB for an array with shape (97550, 194749) and data type float64

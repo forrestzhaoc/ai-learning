@@ -20,7 +20,7 @@ def main():
     db = QdrantGraphDB(use_local=True)
     
     # 创建丰富数据
-    print("\n正在创建丰富的数据集...")
+    print("\n正在创建丰富的数据集..."
     graph_data = create_rich_data()
     
     # 添加数据
