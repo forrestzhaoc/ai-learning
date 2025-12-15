@@ -1,0 +1,41 @@
+Road Accident Risk Prediction - 项目总结
+========================================
+
+📁 项目结构
+├── src/                      核心代码
+│   ├── data_processing.py   数据处理和特征工程
+│   ├── eda.py              探索性数据分析
+│   └── train.py            模型训练（集成学习）
+├── data/                    数据文件
+│   ├── train.csv           训练数据 (9,852 rows)
+│   ├── test.csv            测试数据 (2,464 rows)
+│   └── 其他原始数据文件
+├── models/                  训练好的模型
+│   └── ensemble_model.pkl  (11.5 MB)
+├── predictions/             提交文件
+│   └── submission_*.csv    (最新: submission_20251215_101316.csv)
+├── download_data.py         下载Kaggle数据
+├── generate_submission.py   生成提交文件
+├── quick_start.py          一键运行完整流程
+├── requirements.txt        依赖包
+└── README.md               项目说明
+
+📊 数据信息
+- 数据来源: Kaggle (saurabhshahane/road-traffic-accidents)
+- 训练集: 9,852 条记录
+- 测试集: 2,464 条记录
+- 特征数: 14 个
+
+🏆 模型性能
+- CatBoost RMSE: 0.4049 (最佳)
+- LightGBM RMSE: 0.4051
+- XGBoost RMSE: 0.4059
+- 集成模型 RMSE: 0.4059
+
+📤 提交文件
+- predictions/submission_20251215_101316.csv
+- 2,464 条预测结果
+
+🚀 快速使用
+1. 训练: ./venv/bin/python quick_start.py
+2. 提交: predictions/submission_20251215_101316.csv
