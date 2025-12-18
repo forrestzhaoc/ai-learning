@@ -8,3 +8,5 @@ matplotlib>=3.7
 seaborn>=0.12
 scipy>=1.11
 geopy>=2.4
+
+
